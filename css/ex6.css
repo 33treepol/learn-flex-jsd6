@@ -1,0 +1,96 @@
+*
+{
+    /* outline: 1px solid red; */
+}
+
+body
+{
+    background-color: rgb(220, 220, 220);
+}
+
+/* --------------- Container */
+.Head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Head__logo
+{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Head__selection
+{
+    width: 250px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: gray;
+}
+
+/* --------------- child */
+        /* --------------- header */
+.Head__logo img
+{
+    height: 80px;
+}
+
+.Head__selection select
+{
+    border-radius: 4px;
+}
+
+.Head__selection__filtering
+{
+    flex: 1;
+}
+.Head__selection__sorting
+{
+    flex: 1;
+}
+.Head__selection select
+{
+    margin-top: 10px;
+    width: 113px;
+}
+
+        /* --------------- main */
+.Main
+{
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    margin: 35px 50px 0 50px;
+    /* padding-top: 50px; */
+
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+.Main__item button
+{
+    width: 80px;
+    color: blue;
+}
+.Main__item button:hover
+{
+    /* text-shadow: 1px 1px 1px red; */
+    font-weight: 700;
+    box-shadow: 0 0 5px rgb(154, 154, 154);
+}
+
+.Main__item
+{
+    flex: 1;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.Main__item img
+{
+    width: 200px;
+}

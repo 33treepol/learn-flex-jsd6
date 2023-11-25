@@ -1,0 +1,83 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid rgb(0, 0, 255); */
+}
+/* --------------------------------  container */
+.Container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Container__header
+{
+    display: flex;
+    background-color: red;
+    height: 64px;
+    align-items: center;
+}
+
+.Container__content
+{
+    flex: 1;
+    display: flex;
+}
+.Container__footer
+{
+    background-color: red;
+    height: 64px;
+}
+
+/* --------------------------------  header */
+
+.Container__header label
+{
+    padding-left: 100px;
+    padding-right: 25px;
+}
+.Container__header input
+{
+    flex: 1;
+}
+.Container__header button
+{
+    margin-right: 100px;
+}
+
+/* --------------------------------  main */
+.Container__content__aside-left
+{
+    background-color: rgb(154, 173, 78);
+    flex: 1;
+}
+.Container__content__aside-right
+{
+    background-color: rgb(0, 255, 68);
+    flex: 1;
+}
+
+.Container__content__words
+{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    align-content: flex-start;
+    /* row-gap: 5px; */
+    column-gap: 25px;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
+
+.Container__content__words p
+{
+    background-color: aqua;
+    margin: 5px 0;
+    border-radius: 4px;
+    padding: 0 5px;
+    
+}
