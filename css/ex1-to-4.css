@@ -26,6 +26,13 @@
     flex: 1;
     display: flex;
 }
+
+.Container__content__words
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .Container__footer
 {
     background-color: red;
@@ -63,6 +70,10 @@
 .Container__content__words
 {
     flex: 3;
+}
+
+.Container__content__words .content
+{
     display: flex;
     justify-content: center;
     /* align-items: flex-start; */
@@ -80,4 +91,34 @@
     border-radius: 4px;
     padding: 0 5px;
     
+}
+
+.navigators
+{
+    margin-top: 20px;
+    
+    text-align: center;
+}
+
+.navigators a
+{
+    padding: 0px 10px;
+}
+
+.navigators .active
+{
+    background-color: rgba(85, 0, 255, 0.507);
+    
+    filter: blur(8%);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    box-shadow: 0 0 10px rgb(85, 0, 255);
+
+}
+
+.navigators a:hover:not(.navigators .active)
+{
+    text-shadow: 1px 1px 3px rgb(242, 0, 255);
+    text-transform: uppercase;
 }
